@@ -16,7 +16,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
-    hot: true,
+    // hot: true,
   },
   entry: ["@babel/polyfill", path.resolve(__dirname, "src", "index.js")],
   output: {
