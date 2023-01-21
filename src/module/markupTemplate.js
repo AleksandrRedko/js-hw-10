@@ -1,16 +1,16 @@
   const renderCountryList = function ({ flags, name}){ 
     return `<li>
-        <img/  src="${flags.svg}" alt="${name.official} style="width="25px"">
+        <img/  src="${flags.svg}" alt="${name.official} style="width="35px"">
         <h2>${name.official}</h2>
         </li>`;     
         };
   
   const renderCountryСard = function ({ flags, name,capital,population,languages}){
     return `<ul>
-    <h1><img/  src="${flags.svg}" alt="${name.official} style="width="50px""> ${name.official}</h1>
-    <li><strong>Capital</strong> :${capital}</li>
-    <li><strong>population</strong> :${population}</li>
-    <li><strong>languages</strong> :${Object.values(
+    <li><h1><img/  src="${flags.svg}" alt="${name.official} style="width="90px""> ${name.official}</h1></li>
+    <li class="country-info-list"><strong>Capital</strong> :${capital}</li>
+    <li class="country-info-list"><strong>population</strong> :${population}</li>
+    <li class="country-info-list"><strong>languages</strong> :${Object.values(
       languages,
     )}</li>
   </ul> `
